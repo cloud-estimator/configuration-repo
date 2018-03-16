@@ -1,0 +1,24 @@
+server:
+  port: 0
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/estimator"
+    username: postgres
+    password: "{cipher}5db65212ef51d3dec0ec5e108cf6a6b7a5517fdab8b9fd6087759da5a3f92b97" 
+      
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    enabled: true
+
+example:
+  property: "Cloud"
+
+flyway:
+  enabled: true
+  locations:
+  - classpath:db/migration
+  - classpath:cloud/db/migration
+  clean-on-validation-error: true
