@@ -1,13 +1,13 @@
 spring: 
   profiles: 
     include: cloud
-  datasource:
-    url: jdbc:postgresql://cloud-estimator-aws-dev.cnfqvs0aadgl.us-west-2.rds.amazonaws.com:5432/cloud_estimator_aws_dev
-    username: ddharna
-    password: "Passw0rd!"
+#  datasource:
+#    url: jdbc:postgresql://db.estimator.cloud:5432/cloud_estimator_aws_dev
+#    username: ddharna
+#    password: "Passw0rd!"
     
-  jpa:
-    properties:
-      hibernate:
-        temp: 
-          use_jdbc_metadata_defaults: false
+#  jpa:
+#    properties:
+#      hibernate:
+#        temp: 
+#          use_jdbc_metadata_defaults: false
