@@ -2,9 +2,9 @@ spring:
   profiles: 
     include: cloud
   datasource:
-    url: jdbc:postgresql://cloud-estimator-db.cnfqvs0aadgl.us-west-2.rds.amazonaws.com:5432/cloud_estimator
+    url: jdbc:postgresql://db.estimator.cloud:5432/cloud_estimator
     username: ddharna
-    password: "Passw0rd!"
+    password: "{cipher}efef162d75190cffc48a303b6a83e9d16b6962405162e849f8f8a936dd18f610"
     
   jpa:
     properties:
